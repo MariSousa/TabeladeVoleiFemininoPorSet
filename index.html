@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="_img/bola-de-voleibol.jpg" type="image/x-icon">
+    <title>Tabela de Volei Feminino</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1> Superleague Womem Volleyball</h1>
+
+<form>
+
+        <div class="pontuacaoTime">
+
+            <div class="tabela">
+                <div class="dados">
+                    <div class="timesNome">
+                        <label for="nomeTime">Digite o nome do time:</label>
+                        <input type="text" name="nomeTime" id="nomeTime" autofocus autocomplete="off" required>  
+                    </div>
+
+                    <div class="pontoTotal">
+                        <label for="pontoTotalTime">Digite a quantidade de pontos que o time já tem:</label>
+                        <input type="text" name="pontoTotalTime" id="ultimaPontuacao" autocomplete="off" required>
+                    </div>
+
+                    <div class="sets">
+
+                        <div class="setTime">
+                            <label for="setTime">Digite quanto sets o time fez no último jogo:</label>
+                            <input type="text" name="setTime" id="setTime" autocomplete="off" required>
+                        </div>
+
+                        <div class="setTimeAdversario">
+                            <label for="setTimeAdversario">Digita quantos sets o time adversário fechou no último jogo:</label>
+                            <input type="text" name="setTimeAdversario" id="setTimeAdversario" autocomplete="off" required> 
+                        </div>
+
+                    </div>
+                </div>
+
+                    <div class="resultado">
+                        <div class="exibirDadosInputs">
+                            <p id="dadosInput"></p>
+                        </div>
+
+                        <div class="resultadoFinal">
+                            <p id="exibirResultadoP"></p>
+                        </div>  
+                    </div>
+        </div>
+            
+
+            <div class="btt">
+                <input type="button" value="Adicionar Time" id="adicionarTime">
+                <input type="button" value="Calcular Pontuação" id="calcularPontuacao">
+                <input type="button" value="Limpar Tabela" id="limparTabela">
+            </div>
+
+        </div>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
